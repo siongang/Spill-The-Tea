@@ -11,4 +11,6 @@ Add the bot using the following link: https://discord.com/api/oauth2/authorize?c
 - !help            | Instructions
 
 ## Installation
-Clone the repo, Add an .env file for the bot token, Run script.py
+- Clone the repo
+- Add an .env file for the bot token
+- Run script.py
