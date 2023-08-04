@@ -17,15 +17,18 @@ def draw():
     labels = nx.get_edge_attributes(G, 'weight')
     nx.draw_networkx_edge_labels(G, pos, edge_labels=labels, font_color='red')
   
-    if os.path.isfile(image_path):
-       
-       os.remove(image_path)
-      
-
+  
     plt.savefig("graph.png")
     plt.clf()
     print(map)
 
+def reset():
+    global map
+    map = {}
+    plt.savefig("graph.png")
+    plt.clf()
+    G.clear()
+     
 def check(person1, person2):   
     global map 
     for p1 in map:

@@ -39,8 +39,6 @@ class CustomHelpCommand(commands.HelpCommand):
         await self.get_destination().send(embed=embed)
 
 
-
-
 # Set the custom help command
 bot.help_command = CustomHelpCommand()
 
@@ -66,11 +64,10 @@ async def like(ctx, member: discord.Member):
 @bot.command(brief="reset the image")
 async def reset(ctx):
     if os.path.exists(image_path):
-        os.remove(image_path)
+        graph.reset()
         await ctx.send("map has been reset")
     else:
         await ctx.send(f"{image_path} does not exist.")
-
 
 
 bot.run(token)
