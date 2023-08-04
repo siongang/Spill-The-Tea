@@ -14,4 +14,5 @@ Add the bot using the following [link](https://discord.com/api/oauth2/authorize?
 ## Installation
 - Clone the repo
 - Add an .env file for the bot token
+- Install libraries: matplotlib, networkx, discord, and dotenv
 - Run script.py
