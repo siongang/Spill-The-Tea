@@ -1,5 +1,5 @@
 # Spill-The-Tea
-Spill The Tea is a discord bot that allows friends and comunities to have fun spilling the beans. 
+Spill The Tea is a discord bot that allows friends and comunities have fun spilling the beans. 
 It creates a map of "crushes" and indicates whether it is mutual or one sided. 
 Hope you have fun using this bot!!
 
