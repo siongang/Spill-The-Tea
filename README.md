@@ -7,6 +7,7 @@ Add the bot using the following [link](https://discord.com/api/oauth2/authorize?
 
 ## Commands
 - !like [@mention] | Used to submit a crush
+- !show            | Displays the map
 - !reset           | Used to reset the map
 - !help            | Instructions
 
