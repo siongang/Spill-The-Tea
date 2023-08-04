@@ -73,4 +73,4 @@ async def reset(ctx):
 
 
 
-bot.run('MTA0MjA5MjM1NzIxNjEwODU2NA.GwmyVZ.91O2vaT8l9UmaneXBB3qbC6za6I-CyiRwts9QE')
+bot.run(token)
