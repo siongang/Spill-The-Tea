@@ -29,6 +29,7 @@ class CustomHelpCommand(commands.HelpCommand):
 
         commands = [  
             {"name": "like", "brief": "Submit your tea (smone u like) :)"},
+            {"name": "show", "brief": "Displays map."},
             {"name": "reset", "brief": "Resets the image."},
             {"name": "help", "brief": "Shows the list of available commands."}
         ]
@@ -58,6 +59,11 @@ async def like(ctx, member: discord.Member):
     person1 = ctx.author.name
     person2 = member.name
     graph.connect(person1,person2)
+    image = discord.File(image_path)
+    await ctx.send(file=image)
+
+@bot.command()
+async def show( ctx):
     image = discord.File(image_path)
     await ctx.send(file=image)
 
