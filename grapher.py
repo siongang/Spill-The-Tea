@@ -2,18 +2,23 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 class Map:
-  
     image_path = "graph.png"
 
     # constructor
     def __init__(self, server):
+        # map of connections
         self.map = {}
+        # number of links
         self.linkCounter = 0
+        # server name
         self.serverName = server
+        # graph object
         self.G = nx.Graph()
 
     # draw the map onto the file
+    # sizes nodes and zooms out based on number of people on the map
     def drawMap(self):
+        # number of nodes
         nodeNum = self.G.number_of_nodes()
         
         # Draw the graph
